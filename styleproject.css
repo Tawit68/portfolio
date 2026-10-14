@@ -285,10 +285,6 @@ footer {
     }
 }
 
-/* =========================
-   SMALL MOBILE
-   480px and below
-========================= */
 @media screen and (max-width: 480px) {
     .container {
         padding: 0 12px;
