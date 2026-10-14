@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+:root {
+    --white-color: rgb(250, 250, 250);
+    --text-color: #222222;
+    --text-color2: #555;
+    --blue-color: rgb(0, 60, 255);
+    --bg-blue-color: #111827;
+    --bg-color: rgb(114, 106, 106);
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--white-color);
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.name-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.name-subtitle {
+    font-size: 0.8rem;
+    color: var(--text-color2);
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color2);
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--bg-blue-color);
+    color: var(--white-color);
+}
+
+.card {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0px 3px var(--bg-blue-color);
+    border: 1px solid var(--white-color);
+    margin-bottom: 30px;
+}
+
+
+.card-title {
+    font-size: 1.4rem;
+    color: var(--blue-color);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--white-color);
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.goal-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-left: 4px solid var(--blue-color);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+}
+
+.edu-item {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+
+.edu-item::after {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+}
+
+
+.edu-year {
+    display: inline-block;
+    background-color: var(--white-color);
+    color: var(--text-color2);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.edu-degree {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.edu-school {
+    font-size: 1rem;
+    color: var(--blue-color);
+    margin-bottom: 8px;
+}
+
+.edu-desc {
+    font-size: 0.95rem;
+    color: var(--text-color2);
+    line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--white-color);
+    background-color: var(--blue-color);
+}
+
+.footer-content {
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    .head {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .name {
+        text-align: left;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: row;
+        padding: 60px 0;
+        text-align: left;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .hero-desc {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 24px;
+    }
+
+    .head {
+        gap: 12px;
+    }
+
+    nav ul {
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 0.95rem;
+    }
+
+    .history-content {
+        padding: 30px 0;
+    }
+
+    .card {
+        padding: 25px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 18px;
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 18px 0;
+    }
+
+    .name {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .history-content {
+        padding: 25px 0;
+    }
+
+    .card {
+        padding: 22px;
+        margin-bottom: 22px;
+        border-radius: 12px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 16px;
+    }
+
+    .goal-text {
+        font-size: 1rem;
+        padding: 16px;
+    }
+
+    .edu-degree {
+        font-size: 1.05rem;
+    }
+
+    .edu-school {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .head {
+        padding: 15px 0;
+    }
+
+    .name-title {
+        font-size: 1.1rem;
+    }
+
+    nav ul {
+        gap: 3px;
+    }
+
+    nav a {
+        padding: 7px 8px;
+        font-size: 0.8rem;
+    }
+
+    .history-content {
+        padding: 20px 0;
+    }
+
+    .card {
+        padding: 16px;
+        margin-bottom: 18px;
+    }
+
+    .card-title {
+        font-size: 1.15rem;
+        padding-bottom: 8px;
+        margin-bottom: 14px;
+    }
+
+    .goal-text {
+        font-size: 0.92rem;
+        line-height: 1.8;
+        padding: 13px;
+    }
+
+    .education-list {
+        padding-left: 5px;
+    }
+
+    .edu-item {
+        padding-left: 20px;
+        padding-bottom: 22px;
+    }
+
+    .edu-year {
+        font-size: 0.8rem;
+    }
+
+    .edu-degree {
+        font-size: 1rem;
+    }
+
+    .edu-school {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    footer {
+        padding: 16px 10px;
+    }
+
+    .footer-content {
+        font-size: 0.8rem;
+    }
+}

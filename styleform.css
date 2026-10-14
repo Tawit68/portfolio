@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+:root {
+    --white-color: rgb(250, 250, 250);
+    --text-color: #222222;
+    --text-color2: #555;
+    --blue-color: rgb(0, 60, 255);
+    --bg-blue-color: #111827;
+    --bg-white-color2: rgb(100, 97, 97);
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--white-color);
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.name-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.name-subtitle {
+    font-size: 0.8rem;
+    color: var(--text-color2);
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color2);
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--bg-blue-color);
+    color: var(--white-color);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: var(--bg-blue-color);
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: var(--text-color2);
+    font-size: 1.1rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+}
+
+
+.card {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0px 3px var(--bg-blue-color);
+    border: 1px solid var(--white-color);
+}
+
+.contact-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px var(--white-color);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    background-color: var(--white-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.contact-details h3 {
+    font-size: 1.1rem;
+    color: var(--bg-blue-color);
+    margin-bottom: 5px;
+}
+
+.contact-details a,
+.contact-details p {
+    color: var(--text-color2);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: var(--blue-color);
+}
+
+.form-title {
+    font-size: 1.4rem;
+    color: var(--blue-color);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-color2);
+    font-size: 0.95rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--bg-white-color2);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--bg-blue-color);
+    transition: all 0.3s ease;
+    background-color: var(--white-color);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--blue-color);
+    box-shadow: 0px 0px 1px var(--bg-blue-color);
+    background-color: var(--white-color);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: var(--blue-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px var(--bg-blue-color);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--white-color);
+    background-color: var(--blue-color);
+    margin-top: 10px;
+}
+
+.footer-content {
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 24px;
+    }
+
+    .head {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+    }
+
+    .contact-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+        gap: 20px;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    .section-header {
+        margin: 35px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .head {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 0;
+    }
+
+    .name {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 6px;
+    }
+
+    nav a {
+        padding: 7px 10px;
+        font-size: 0.9rem;
+    }
+
+    .section-header {
+        margin: 30px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 22px;
+        border-radius: 12px;
+    }
+
+    .form-title {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-item {
+        gap: 12px;
+    }
+
+    .submit-btn {
+        padding: 14px 20px;
+    }
+
+    footer {
+        padding: 18px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .name-title {
+        font-size: 1.1rem;
+    }
+
+    nav ul {
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 7px 8px;
+        font-size: 0.82rem;
+    }
+
+    .section-header {
+        margin: 25px 0;
+    }
+
+    .section-title {
+        font-size: 1.55rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .contact-grid {
+        gap: 16px;
+        margin-bottom: 25px;
+    }
+
+    .card {
+        padding: 18px 15px;
+    }
+
+    .form-title {
+        font-size: 1.15rem;
+    }
+
+    .contact-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.25rem;
+    }
+
+    .contact-details h3 {
+        font-size: 1rem;
+    }
+
+    .contact-details a,
+    .contact-details p {
+        font-size: 0.85rem;
+    }
+
+    .form-control {
+        padding: 11px 12px;
+        font-size: 16px;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        font-size: 0.95rem;
+    }
+}
