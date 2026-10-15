@@ -107,16 +107,6 @@ nav a:hover {
   margin-bottom: 25px;
 }
 
-.edu-item::after {
-  content: "";
-  position: absolute;
-  left: -4px;
-  top: 5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--blue-color);
-}
 
 .edu-year {
   display: inline-block;
