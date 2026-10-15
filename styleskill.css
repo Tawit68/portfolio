@@ -1,354 +1,314 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: var(--white-color);
-    color: var(--text-color);
-    line-height: 1.6;
+  background-color: var(--white-color);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 :root {
-    --white-color: rgb(250, 250, 250);
-    --text-color: #222222;
-    --text-color2: #555;
-    --blue-color: rgb(0, 60, 255);
-    --bg-blue-color: #111827;
+  --white-color: rgb(250, 250, 250);
+  --text-color: #222222;
+  --text-color2: #555;
+  --blue-color: rgb(0, 60, 255);
+  --bg-blue-color: #111827;
 }
 
 .head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--white-color);
 }
 
 .name {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .name-title {
-    font-size: 1.2rem;
-    font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .name-subtitle {
-    font-size: 0.8rem;
-    color: var(--text-color2);
+  font-size: 0.8rem;
+  color: var(--text-color2);
 }
 
-
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 nav a {
-    text-decoration: none;
-    color: var(--text-color2);
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--text-color2);
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background-color: var(--bg-blue-color);
-    color: var(--white-color);
+  background-color: var(--bg-blue-color);
+  color: var(--white-color);
 }
 
 .section-header {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .section-title {
-    font-size: 2.2rem;
-    color: var(--bg-blue-color);
-    margin-bottom: 10px;
+  font-size: 2.2rem;
+  color: var(--bg-blue-color);
+  margin-bottom: 10px;
 }
 
 .section-subtitle {
-    color: var(--text-color2);
-    font-size: 1.1rem;
+  color: var(--text-color2);
+  font-size: 1.1rem;
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 60px;
 }
 
 .card {
-    background-color: var(--white-color);
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0px 0px 3px var(--bg-blue-color);
-    border: 1px solid var(--text-color2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
+  background-color: var(--white-color);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 3px var(--bg-blue-color);
+  border: 1px solid var(--text-color2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  height: 100%;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    /* box-shadow: 0 10px 25px var(--bg-blue-color); */
+  transform: translateY(-5px);
+  /* box-shadow: 0 10px 25px var(--bg-blue-color); */
 }
 
 .card-title {
-    font-size: 1.4rem;
-    color: var(--blue-color);
-    margin-bottom: 25px;
-    border-bottom: 2px solid var(--white-color);
-    padding-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  font-size: 1.4rem;
+  color: var(--blue-color);
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--white-color);
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .skill-item {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .skill-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--text-color);
 }
 
-
 .working-skills {
-    list-style: none;
+  list-style: none;
 }
 
 .working-skills li {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .skill-name {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
 }
 
-
 .skill-desc {
-    font-size: 0.95rem;
-    color: var(--text-color2);
-    padding-left: 28px;
-    line-height: 1.5;
+  font-size: 0.95rem;
+  color: var(--text-color2);
+  padding-left: 28px;
+  line-height: 1.5;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--white-color);
-    background-color: var(--blue-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--white-color);
+  background-color: var(--blue-color);
 }
 
 .footer-content {
-    color: var(--text-color);
-    font-size: 0.9rem;
-}
-
-@media screen and (max-width: 1024px) {
-    .container {
-        padding: 0 24px;
-    }
-
-    .head {
-        gap: 12px;
-    }
-
-    nav ul {
-        gap: 4px;
-    }
-
-    nav a {
-        padding: 8px;
-        font-size: 0.95rem;
-    }
-
-    .section-header {
-        margin: 35px 0 30px;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .skills-grid {
-        gap: 20px;
-    }
-
-    .card {
-        padding: 24px;
-    }
-
-    .card-title {
-        font-size: 1.25rem;
-    }
+  color: var(--text-color);
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 767px) {
-    .container {
-        padding: 0 18px;
-    }
+  .container {
+    padding: 0 18px;
+  }
 
-    .head {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 18px 0;
-    }
+  .head {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 0;
+  }
 
-    .name {
-        justify-content: center;
-        text-align: center;
-    }
+  .name {
+    justify-content: center;
+    text-align: center;
+  }
 
-    nav {
-        width: 100%;
-    }
+  nav {
+    width: 100%;
+  }
 
-    nav ul {
-        justify-content: center;
-        gap: 5px;
-    }
+  nav ul {
+    justify-content: center;
+    gap: 5px;
+  }
 
-    nav a {
-        padding: 8px 10px;
-        font-size: 0.9rem;
-    }
+  nav a {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
 
-    .section-header {
-        margin: 30px 0 25px;
-    }
+  .section-header {
+    margin: 30px 0 25px;
+  }
 
-    .section-title {
-        font-size: 1.8rem;
-    }
+  .section-title {
+    font-size: 1.8rem;
+  }
 
-    .section-subtitle {
-        font-size: 1rem;
-    }
+  .section-subtitle {
+    font-size: 1rem;
+  }
 
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 22px;
-        margin-bottom: 30px;
-    }
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-bottom: 30px;
+  }
 
-    .card {
-        padding: 24px;
-    }
+  .card {
+    padding: 24px;
+  }
 
-    .card-title {
-        font-size: 1.25rem;
-        margin-bottom: 22px;
-    }
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 22px;
+  }
 
-    .skill-name {
-        font-size: 1.05rem;
-    }
+  .skill-name {
+    font-size: 1.05rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .container {
-        padding: 0 12px;
-    }
+  .container {
+    padding: 0 12px;
+  }
 
-    .head {
-        padding: 15px 0;
-    }
+  .head {
+    padding: 15px 0;
+  }
 
-    .name-title {
-        font-size: 1.1rem;
-    }
+  .name-title {
+    font-size: 1.1rem;
+  }
 
-    nav ul {
-        gap: 3px;
-    }
+  nav ul {
+    gap: 3px;
+  }
 
-    nav a {
-        padding: 7px 8px;
-        font-size: 0.8rem;
-    }
+  nav a {
+    padding: 7px 8px;
+    font-size: 0.8rem;
+  }
 
-    .section-header {
-        margin: 25px 0 20px;
-    }
+  .section-header {
+    margin: 25px 0 20px;
+  }
 
-    .section-title {
-        font-size: 1.55rem;
-    }
+  .section-title {
+    font-size: 1.55rem;
+  }
 
-    .section-subtitle {
-        font-size: 0.9rem;
-        line-height: 1.7;
-    }
+  .section-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
 
-    .skills-grid {
-        gap: 18px;
-    }
+  .skills-grid {
+    gap: 18px;
+  }
 
-    .card {
-        padding: 17px;
-        border-radius: 12px;
-    }
+  .card {
+    padding: 17px;
+    border-radius: 12px;
+  }
 
-    .card-title {
-        font-size: 1.1rem;
-        margin-bottom: 20px;
-    }
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
 
-    .skill-item {
-        margin-bottom: 22px;
-    }
+  .skill-item {
+    margin-bottom: 22px;
+  }
 
-    .skill-info {
-        font-size: 0.9rem;
-    }
+  .skill-info {
+    font-size: 0.9rem;
+  }
 
-    .skill-bar {
-        height: 8px;
-    }
+  .skill-bar {
+    height: 8px;
+  }
 
-    .skill-name {
-        font-size: 1rem;
-    }
+  .skill-name {
+    font-size: 1rem;
+  }
 
-    .skill-desc {
-        font-size: 0.88rem;
-        padding-left: 5px;
-    }
+  .skill-desc {
+    font-size: 0.88rem;
+    padding-left: 5px;
+  }
 
-    footer {
-        padding: 16px 10px;
-    }
+  footer {
+    padding: 16px 10px;
+  }
 
-    .footer-content {
-        font-size: 0.8rem;
-    }
+  .footer-content {
+    font-size: 0.8rem;
+  }
 }
